@@ -53,6 +53,7 @@ a:hover {
     padding: 10px;
     border-radius: 5px;
     color: white;   
+    animation: fadeIn 4s;
 } 
 .headerImg{
     width: 100%;
