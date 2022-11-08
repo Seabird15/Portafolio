@@ -1,74 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@200&display=swap');
 * { 
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-}
-/*--HEADER--*/
-body {
-    background-image: url(./imgs/14140485_5434380.jpg);
-    background-size: cover;
+    box-sizing: border-box;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.header {
-    margin-top: 0.5rem;
-    background-image: url(./imgs/codigo-programacion-resumen-antecedentes-tecnologia-desarrollador-software-script-computadora_34663-31.webp);
-    height: 300px;
+html {
+    scroll-behavior: smooth;
 }
-.title{
-    display: flex;
-    justify-content: end;
-    color: rgb(255, 255, 255);
-    transition: ease-in 0.5s;
+#inicio{
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./imgs/encendido-computadora-portatil-gris_400718-47.webp");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
 }
-/*--NAV--*/
-.menu {
-    margin-top: 2rem;
-    padding: 0.5rem;
-    background: #00000080;
-    border-top: 0.1rem solid rgba(86, 86, 86, 0.5);
-    border-bottom: 0.1rem solid rgba(86, 86, 86, 0.5);
-    position: sticky;
-    z-index: 11;
-    top: 0;
-    display: grid;
-    grid-template-columns: 10% auto;
-}
-
-.menu .contenedor-menu {
+#inicio .contenido header {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
     width: 100%;
-    height: 100%;
+    z-index: 100;
+    top: 0;
+}
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    padding: 0;
+    padding: 10px 20px;
 }
-a {
-    color: white;
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: #ff5080;
+}
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: none;
+    align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a {
     text-decoration: none;
-}
-.menu .foto img {
-    width: 2.5rem;
-}
-/*ABOUT ME */
-.aboutMeH1 {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(103, 92, 185, 0.552);
-    margin-top: 0.5rem;
-}
-details {
-    display: flex;
-    margin: 0.5rem;
-}
-
-
-
-@media (min-width: 1024px) { 
-    .header {
-        height: 800px;
-        margin-top: 0.5rem;
-        background-image: url(./imgs/encendido-computadora-portatil-gris_400718-47.webp);
-        background-size:cover;
-        
-    }
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
 }

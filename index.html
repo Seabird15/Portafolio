@@ -1,43 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Dani Lizama - Desarrollo Web</title>
 </head>
 <body>
-    <div class="contenedor">
-        <nav class="menu">
-            <div class="foto">
-                <img class = "cat" src="./imgs/gat.png" alt="">
-            </div>
-            <div class="contenedor-menu">
-                <a href="#aboutMe">Sobre mí</a>
-                <a href="">Proyectos</a>
-                <a href="">Contacto</a>
-            </div>
-        </nav>    
+    <!--Seccion inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <img src="./imgs/gat.png" alt="">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                            <li><a href="#sobreMi">SOBRE MI</a></li>
+                            <li><a href="#proyectos">PROYECTOS</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
 
-    <header class="header">
-        <h2 class="title">Daniela Lizama Aravena</h2>
-        <h3 class="title">Front End Developer Jr</h3>
-    </header>
-    <section class="aboutMe" id="aboutMe">
-        <div class="aboutMeH1">
-           <h1>About Me</h1>
-           <details>Soy una persona apasionada por la tecnologia. Desde pequeña he sido autodidacta en todas las areas de mi interes y en el camino he logrado encontrar un espacio donde puedo desafiarme a aplicar mis capacidades a algo mas allá de un hobbie.
-            Me interesa desarrollarme en el campo laboral tech y estoy abierta a desempeñarme en distintos ámbitos que potencien mis capacidades. Me considero una persona responsable y ordenada, orientada al logro y capaz de 
-            trabajar en función de los objetivos y metas planteados en mi equipo de trabajo.
-
-           </details>
+                    <!--Iconos de las RRSS-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidxs!</p>
+                <h2>Soy <span>Daniela Lizama Aravena</span>, Front End Developer</h2>
+                <p class="descripcion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore accusamus, deserunt, necessitatibus dignissimos.</p>
+                <a href="#portafolio">Ir a Portafolio</a>
+            </div>
         </div>
     </section>
-    </div>
+
+    <!--About me-->
+    <section id="sobreMi">
+        <div class="contenedor-foto">
+            <img src="./imgs/fotome.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+                <h2>Hola, Soy <span>Daniela Lizama</span></h2>
+                <h3>Front End Developer</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima rem ab maxime beatae assumenda neque tenetur voluptates, !</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eum?</p>
+                <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <!--Proyectos-->
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Data Lovers</h4>
+                    <hr>
+                    <ul class="proyectos-tag">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa sint nostrum, rerum magnam atque alias iusto dignissimos mollitia veritatis repudiandae fugit, quasi omnis qui beatae quaerat consectetur ducimus. Praesentium laboriosam voluptatum, mollitia quis nulla beatae ab veritatis itaque. Ab.</p>
+            </div>
+            <div class="proyecto">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Red Social</h4>
+                    <hr>
+                    <ul class="proyectos-tag">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa sint nostrum, rerum magnam atque alias iusto dignissimos mollitia veritatis repudiandae fugit, quasi omnis qui beatae quaerat consectetur ducimus. Praesentium laboriosam voluptatum, mollitia quis nulla beatae ab veritatis itaque. Ab.</p>
+                
+            </div>
+            <div class="proyecto">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                    <h4>Burger Queen</h4>
+                    <hr>
+                    <ul class="proyectos-tag">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore culpa sint nostrum, rerum magnam atque alias iusto dignissimos mollitia veritatis repudiandae fugit, quasi omnis qui beatae quaerat consectetur ducimus. Praesentium laboriosam voluptatum, mollitia quis nulla beatae ab veritatis itaque. Ab.</p>                
+            </div>
+        </div>
+    </section>
 </body>
-<script src="main.js"></script>
 </html>
